@@ -1,0 +1,55 @@
+{% extends 'include/base.html' %}
+{% load static %}
+
+    {% block header %}
+        {% include "include/header.html" %}
+    {% endblock header %}
+    {% block content_head %}
+        <div class="row pageHead">
+            <h4>Registration</h4>
+        </div>
+    {% endblock content_head %}
+    {% block content %}
+        <div class="row">
+            <form>
+                <div class="form-group row">
+                    <label for="inputLogin " class="col-2 col-form-label">Login</label>
+                    <div class="col-4">
+                        <input type="login" class="form-control" id="loginInput"  placeholder="Enter Login">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail" class="col-2 col-form-label">Email</label>
+                    <div class="col-4">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputNikName " class="col-2 col-form-label">NikName</label>
+                    <div class="col-4">
+                        <input type="login" class="form-control" id="inputNikName"  placeholder="Enter NikName">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-2 col-form-label">Password</label>
+                    <div class="col-4">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-2 col-form-label">Repeat password</label>
+                    <div class="col-4">
+                        <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputImg" class="col-2 col-form-label">Upload avatar</label>
+                    <div class="col-4">
+                        <input type="file" class="form-control" id="inputImg" placeholder="Password">
+                        <button type="button" class="btn btn-outline-dark btn-register">Register!</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    {% endblock content %}
+              

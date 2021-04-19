@@ -1,0 +1,20 @@
+{% extends 'include/base.html' %}
+{% load static %}
+
+    {% block header %}
+        {% include "include/authorized_header.html"%}
+    {% endblock header %}
+    {% block content_head %}
+        <div class="row pageHead">
+            <h4>{{question.tag}}</h4>
+        </div>
+    {% endblock content_head %}
+    {% block content %}
+        {% for question in  questions %}
+            {% include "include/question.html" %}
+        {% endfor %}
+    {% endblock content %}
+
+    {% block menu %}
+        {% include "include/menu.html" %}
+    {% endblock menu %}

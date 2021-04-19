@@ -1,0 +1,62 @@
+{% extends 'include/base.html' %}
+{% load static %}
+     {% block header %}
+        {% include "include/header.html" %}
+    {% endblock header %}
+    {% block  content_head %}
+        {% include "include/question.html" %}
+    {% endblock content_head %}
+    {% block content %}
+        <div class="row answer">
+            <div class="col-3">
+                <img src="{% static "img/pic.jpg" %}">
+                <input type="number" max="5" min="0" class="rating" name="rating" id="">
+            </div>
+            <div class="col-9">
+                <div class="row">
+                    <a href="#">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                    </a>
+                    <div>
+                        ore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in rep
+                    </div>
+                </div>
+                <div class="row form-check isCorrect">
+                    <label class="col-5 form-check-label" for="flexCheckDefault">
+                        Correct
+                    </label>
+                    <input class="col-5 form-check-input" type="checkbox" value="" id="flexCheckDefault">  
+                </div>
+            </div>
+        </div>
+        <div class="row answer">
+            <div class="col-3">
+                <img src="{% static "img/pic.jpg" %}">
+                <input type="number" max="5" min="0" class="rating" name="rating" id="">
+            </div>
+            <div class="col-9">
+                <div class="row">
+                    <a href="#">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                    </a>
+                    <div>
+                        ore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in rep
+                    </div>
+                </div>
+                <div class="row form-check isCorrect">
+                    <label class="col-5 form-check-label" for="flexCheckDefault">
+                        Correct
+                    </label>
+                    <input class="col-5 form-check-input" type="checkbox" value="" id="flexCheckDefault">  
+                </div>
+            </div>
+        </div>
+        <div class="row addAnswer form-group">
+            <textarea class="form-control addAnswer__form" id="exampleFormControlTextarea1" rows="5" placeholder="Enter your answer here."></textarea>                <button type="button" class="col-1 btn btn-outline-dark btn-answer">Answer!</button>
+        </div>
+    {% endblock content %}
+               

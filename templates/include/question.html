@@ -1,0 +1,21 @@
+{% load static %}
+<div class="row question">
+                        <div class="col-3">
+                            <img src="{% static "img/pic.jpg" %}">
+                            <input type="number" max="5" min="0" class="rating" name="rating" id="">
+                        </div>
+                        <div class="col-9">
+                            <div class="row">
+                                <a href="{% url 'one_question' pk=question.id %}">
+                                    <h2>{{question.title}}</h2>
+                                </a>
+                                <div>
+                                    {{question.text}}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><a href="#">answer (3)</a></div>
+                                <div class="col">Tags: <a href="#">black-jack bender</a></div>
+                            </div>
+                        </div>
+                    </div>

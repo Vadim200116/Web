@@ -1,0 +1,22 @@
+{% extends 'include/base.html' %}
+{% load static %}
+
+
+{% block header %}
+{% include "include/authorized_header.html"%}
+{% endblock header %}
+
+
+
+                {% block content_head %}
+                <div class="row pageHead">
+                        <div class="col"><h4>New Questions</h4></div>
+                        <div class="col"><h4>Hot Questions</h4></div>
+                </div>
+                {% endblock content_head %}
+                {% block content %}
+
+                {% for question in  questions %}
+                    {% include "include/question.html" %}
+                {% endfor %}
+                {% endblock content %}

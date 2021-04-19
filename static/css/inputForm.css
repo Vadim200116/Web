@@ -1,0 +1,11 @@
+.btn{
+    margin-top: 10px;
+    width:100px;
+}
+
+.form-group input {
+    border: 2px black solid;
+}
+.form-group label {
+    padding-top: 20px ;
+}

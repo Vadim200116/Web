@@ -1,0 +1,68 @@
+main>.container{
+    padding:60px 15px 0 ;
+}
+main{
+    margin-top: 50px;
+}
+header{
+    height: 100px;
+    border-bottom: 2px solid grey;
+    background: white;
+}
+.user img{
+    height: 50px;
+    width: 70px;
+}
+header *{
+    margin-top: 10px;
+    background-color: white;
+}
+
+
+
+.rating{
+    margin-top:5px ;
+    text-align: center;
+}
+
+.rating, .question img{
+    width: 130px;
+}
+.popular-tags, .best-members{
+    margin-left: 100px;
+}
+/* .popular-tags{
+    padding-top: 100px;
+} */
+.black-href{
+    color: black;
+}
+.red-href{
+    color: red;
+}
+.green-href{
+    color: rgb(55, 187, 55);
+}
+.yellow-href{
+    color: rgb(197, 159, 36);
+}
+.popular-tags a{
+    text-decoration: none;
+}
+
+.best-members{
+    margin-top: 30px;
+}
+footer{
+    margin-top: 30px;
+}
+.form-text{
+    height:300px;
+}
+.form-control{
+    margin-top: 10px;
+}
+
+.popular-tags{
+    margin-top: 50px;
+}

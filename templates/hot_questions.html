@@ -1,0 +1,14 @@
+{% extends 'include/base.html' %}
+{% load static %}
+    {% block header %}
+        {% include "include/header.html" %}
+    {% endblock header %}   
+
+    {% block content %}
+        {% for question in  questions %}
+            {% include "include/question.html" %}
+        {% endfor %}
+    {% endblock content %}
+    {% block menu %}
+        {% include "include/menu.html" %}
+    {% endblock menu %}

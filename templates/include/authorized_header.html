@@ -1,0 +1,29 @@
+    {% load static %}
+    <header class="  fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 logo mt-4 ">
+                    AskPupkin
+                </div>
+                <div class="col-7">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <div class="row user">
+                        <div class="col-4">
+                            <img src="{% static "img/user_pic.jpg" %}">
+                        </div>
+                        <div class="col-8">
+                            <div class="row d-flex flex-column">
+                                <div class="p-1">Dr.Pepper</div>
+                                <div class="p-1"><a href="#">settings</a>&ensp;<a href="#">log out</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>

@@ -1,0 +1,28 @@
+.question,.answer{
+    border: 2px black solid;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.head_question{
+    border-bottom: 2px black solid;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.answer img, .head_question img{
+width: 130px;
+}
+.answer,  .addAnswer__form{
+    border: 2px black solid;
+}
+.addAnswer{
+border-top: black 2px solid;
+margin-top: 30px;
+}
+.addAnswer__form{
+    margin-top: 30px;
+}
+
+.isCorrect,.tags{
+    padding-top: 20px;
+}

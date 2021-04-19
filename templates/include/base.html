@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/question.css" %}">
+    <link rel="stylesheet"href="{% static "css/base.css" %}">
+
+</head>
+
+<body class="d-flex flex-column h-100">
+{% block header %}
+{% endblock header %}
+
+
+    <main class="flex-shrink-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                {% block  content_head %}
+
+                {% endblock content_head %}
+                
+                {% block content %}
+                   
+                {% endblock content %}
+                
+                </div>
+                <div class="col-4 ">
+                     <div class="row popular-tags">
+                        <div class="d-flex justify-content-start">
+                            <h4>Popular tags</h4>
+                        </div>
+                        <div class="d-flex justify-content-start"><a class="black-href" href="#">perl</a>&ensp;<a
+                                class="red-href" href="#">python</a>&ensp;<a class="black-href" href="#">TechnoPark</a>
+                        </div>
+                        <div class="d-flex justify-content-start"><a class="red-href" href="#">Mysql</a>&ensp;<a
+                                class="green-href" href="#">django</a></div>
+                        <div class="d-flex justify-content-start"><a class="black-href" href="#">Mail.ru</a>&ensp;<a
+                                class="black-href" href="#">Voloshin</a>&ensp;<a class="yellow-href"
+                                href="#">Firefox</a></div>
+                    </div>
+                    <div class="row flex-column best-members">
+                        <h4>Best Members</h4>
+                        <a href="">Mr.Freeman</a>
+                        <a href="">Dr.House</a>
+                        <a href="">Bender</a>
+                        <a href="">Queen Victoria</a>
+                        <a href="">V.Pupkin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+       
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
