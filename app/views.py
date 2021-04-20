@@ -39,3 +39,9 @@ def tag(request,arg):
     tag_questions=filter(lambda question:question['tag']==arg,questions)
     return render(request, 'tag.html', {'questions':tag_questions})
 
+def paginate (objects_list, request, per_page=10):
+    paginator = Paginator(object_list, per_page) 
+
+    page = request.GET.get('page')
+    objects = paginator.get_page(page)
+    return render(request, 'list.html', {'objects': objects})

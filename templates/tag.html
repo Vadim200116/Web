@@ -13,8 +13,5 @@
         {% for question in  questions %}
             {% include "include/question.html" %}
         {% endfor %}
+        {% include "include/pagination.html" %}
     {% endblock content %}
-
-    {% block menu %}
-        {% include "include/menu.html" %}
-    {% endblock menu %}
